@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Zaragoza Tricks</string>
+    <string name="title_activity_nie">nie</string>
+    <string name="de_inter_s">De Interés</string>
+    <string name="transporte">Transporte</string>
+    <string name="n_i_e">N.I.E.</string>
+    <string name="zaragoza_tricks">Zaragoza Tricks</string>
+    <string name="guia_de_viajero">Guia de viajero</string>
+    <string name="empadronarse">Empadronarse</string>
+    <string name="lugares">Lugares</string>
+    <string name="universidad">Universidad</string>
+    <string name="e_mail">e-mail</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="guardar">Guardar</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="nombre">Nombre</string>
+    <string name="favor_completar_los_datos_a_continuaci_n">Favor completar los datos a continuación</string>
+    <string name="bienvenido_a">Bienvenido a</string>
+    <string name="todo">TODO</string>
+</resources>
