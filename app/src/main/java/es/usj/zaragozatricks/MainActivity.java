@@ -12,6 +12,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity  {
 
     private CardView cv_empadronarse, cv_nie,cv_transporte, cv_deInteres,cv_universidad,cv_lugares;
+    private int fragment_id;
 
 
     @Override
@@ -32,37 +33,42 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
 
-                callHandler();
+                callHandler(R.layout.fragment_nie);
             }
         });
 
         cv_empadronarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                callHandler(R.layout.fragment_empadronarse);
 
             }
         });
         cv_transporte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                callHandler(R.layout.fragment_transporte);
 
             }
         });
         cv_deInteres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //callHandler(R.layout.);
 
             }
         });
         cv_universidad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                callHandler(R.layout.fragment_universidad);
 
             }
         });
         cv_lugares.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                callHandler(R.layout.fragment_lugares);
 
             }
         });
@@ -71,11 +77,12 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
-    private void callHandler(){
+    private void callHandler(int fragment){
 
 
 
         Intent intent = new Intent(this,handler.class);
+        intent.putExtra("fragmentID", fragment);
 
         startActivity(intent,
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());

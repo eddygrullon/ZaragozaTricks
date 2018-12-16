@@ -19,7 +19,6 @@
     <string name="todo">TODO</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello empadronarse fragment</string>
     <string name="documentaci_n_necesario_para_poder_empadronarse">Documentación necesario para poder empadronarse</string>
     <string name="title_activity_maps_nie">Map</string>
     <string name="_2_llevar_formulario_720_junto_a_la_tasa_de_impuesto">2. Llevar formulario 720 junto a la tasa de impuesto</string>
