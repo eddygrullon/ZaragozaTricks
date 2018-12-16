@@ -17,4 +17,9 @@
     <string name="favor_completar_los_datos_a_continuaci_n">Favor completar los datos a continuación</string>
     <string name="bienvenido_a">Bienvenido a</string>
     <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello empadronarse fragment</string>
+    <string name="documentaci_n_necesario_para_poder_empadronarse">Documentación necesario para poder empadronarse</string>
+    <string name="title_activity_maps_nie">Map</string>
 </resources>
