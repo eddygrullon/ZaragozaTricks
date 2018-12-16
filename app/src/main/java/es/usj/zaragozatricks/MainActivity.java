@@ -6,23 +6,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity  {
 
     private CardView cv_empadronarse, cv_nie,cv_transporte, cv_deInteres,cv_universidad,cv_lugares;
     private int fragment_id;
+    private TextView mNombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mNombre = findViewById(R.id.txtSecondTitle);
         cv_empadronarse = findViewById(R.id.cv_empadronarse);
         cv_nie =  findViewById(R.id.cv_nie);
         cv_transporte =  findViewById(R.id.cv_transporte);
         cv_deInteres = findViewById(R.id.cv_deInteres);
         cv_universidad =  findViewById(R.id.cv_universidad);
         cv_lugares = findViewById(R.id.cv_lugares);
+
+        setProfileData();
 
         cv_nie.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +79,14 @@ public class MainActivity extends AppCompatActivity  {
         intent.putExtra("fragmentID", fragment);
 
         startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    public void setProfileData(){
+        ArrayList<String> profileInfo = UtilsHelper.getProfileInfo(this,"profileInfo");
+        if (profileInfo.get(0) != null)
+            mNombre.setText("Bienvenido "+profileInfo.get(0));
+        else
+            mNombre.setText("--");
     }
 
 }

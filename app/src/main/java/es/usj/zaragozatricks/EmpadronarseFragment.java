@@ -29,8 +29,11 @@ public class EmpadronarseFragment extends Fragment {
     }
 
     public void openURLinBrowser(View view){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.zaragoza.es/sede/portal/tramites-servicios/cita-previa"));
-        startActivity(browserIntent);
+        String url = "https://www.zaragoza.es/sede/portal/tramites-servicios/cita-previa";
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
 

@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
@@ -18,12 +20,25 @@ public class TransporteFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    WebView wbTransporte;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_transporte, container, false);
+        View v = inflater.inflate(R.layout.fragment_transporte, container, false);
+        wbTransporte = v.findViewById(R.id.wbTransporte);
+
+
+
+        wbTransporte.setWebViewClient(new WebViewClient());
+        wbTransporte.getSettings().setJavaScriptEnabled(true);
+        wbTransporte.getSettings().setDomStorageEnabled(true);
+        wbTransporte.setOverScrollMode(WebView.OVER_SCROLL_NEVER);
+        wbTransporte.loadUrl("https://www.usj.es/appcrue/transporte");
+
+        return v;
     }
+
+
 
 }

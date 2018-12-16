@@ -62,7 +62,33 @@
             android:drawablePadding="10dp"
             android:drawableTint="#3F51B5"
             android:ems="9"
-            android:hint="@string/nombre"
-            android:inputType="textPersonName" tools:targetApi="o"/>
+            android:hint="@string/nombre_y_apellido"
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/registrar"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="67dp"
+            android:ems="10"
+            android:hint="@string/fecha_de_nacimiento"
+            android:inputType="date"
+            android:autofillHints="" />
     </RelativeLayout>
 </LinearLayout>
