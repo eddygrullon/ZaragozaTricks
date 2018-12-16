@@ -14,7 +14,7 @@
         android:background="@drawable/bg_header">
 
         <TextView
-            android:id="@+id/txtTitle"
+            android:id="@+id/txtTitle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -36,16 +36,16 @@
     </RelativeLayout>
 
     <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.80"
         android:background="@drawable/bg_fragment">
 
-        <fragment
-            android:id="@+id/fragment2"
-            android:name="es.usj.zaragozatricks.NIEFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <!--<fragment-->
+            <!--android:id="@+id/fragment2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
     </FrameLayout>
 
 </LinearLayout>
