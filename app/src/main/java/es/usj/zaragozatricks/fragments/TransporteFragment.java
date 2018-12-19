@@ -1,4 +1,4 @@
-package es.usj.zaragozatricks;
+package es.usj.zaragozatricks.fragments;
 
 
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import es.usj.zaragozatricks.R;
 
 
 /**

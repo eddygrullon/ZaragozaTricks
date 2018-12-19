@@ -1,4 +1,4 @@
-package es.usj.zaragozatricks;
+package es.usj.zaragozatricks.activities;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import es.usj.zaragozatricks.R;
+import es.usj.zaragozatricks.UtilsHelper;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -84,7 +87,7 @@ public class MainActivity extends AppCompatActivity  {
     public void setProfileData(){
         ArrayList<String> profileInfo = UtilsHelper.getProfileInfo(this,"profileInfo");
         if (profileInfo.get(0) != null)
-            mNombre.setText("Bienvenido "+profileInfo.get(0));
+            mNombre.setText("Bienvenido "+ profileInfo.get(0) + profileInfo.get(1) + profileInfo.get(2) + profileInfo.get(3));
         else
             mNombre.setText("--");
     }

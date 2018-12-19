@@ -1,4 +1,4 @@
-package es.usj.zaragozatricks;
+package es.usj.zaragozatricks.fragments;
 
 
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+
+import es.usj.zaragozatricks.R;
 
 
 /**

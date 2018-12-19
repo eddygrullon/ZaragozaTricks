@@ -1,13 +1,19 @@
-package es.usj.zaragozatricks;
+package es.usj.zaragozatricks.activities;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import es.usj.zaragozatricks.R;
+import es.usj.zaragozatricks.fragments.EmpadronarseFragment;
+import es.usj.zaragozatricks.fragments.LugaresFragment;
+import es.usj.zaragozatricks.fragments.NIEFragment;
+import es.usj.zaragozatricks.fragments.TransporteFragment;
+import es.usj.zaragozatricks.fragments.UniversidadFragment;
 
 
 public class handler extends AppCompatActivity {
