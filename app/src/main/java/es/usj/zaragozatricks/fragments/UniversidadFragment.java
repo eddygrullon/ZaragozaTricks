@@ -46,10 +46,8 @@ public class UniversidadFragment extends Fragment implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-41.6579342, -0.8770293);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng usj = new LatLng(41.7562122, -0.8339308);
+        mMap.addMarker(new MarkerOptions().position(usj).title("San Jorge"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(usj));
     }
 }
