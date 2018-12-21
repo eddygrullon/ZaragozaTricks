@@ -50,8 +50,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".MapsActivity_nie" />
+        <activity android:name=".activities.MapsActivity_nie" />
         <activity android:name=".activities.PerfilActivity"></activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 
 </manifest>

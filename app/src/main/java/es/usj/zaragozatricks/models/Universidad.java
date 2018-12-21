@@ -3,6 +3,11 @@ package es.usj.zaragozatricks.models;
 import java.util.ArrayList;
 
 public class Universidad {
+
+
+    private String NombreUniversidad;
+    private ArrayList<Carrera> ListaDeCarreras;
+
     public Universidad(String nombreUniversidad, ArrayList<Carrera> listaDeCarreras) {
         NombreUniversidad = nombreUniversidad;
         ListaDeCarreras = listaDeCarreras;
@@ -16,8 +21,7 @@ public class Universidad {
         NombreUniversidad = nombreUniversidad;
     }
 
-    public String NombreUniversidad;
-    public ArrayList<Carrera> ListaDeCarreras;
+
 
     public ArrayList<Carrera> getListaDeCarreras() {
         return ListaDeCarreras;

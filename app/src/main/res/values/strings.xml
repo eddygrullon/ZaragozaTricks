@@ -31,6 +31,9 @@
     <string name="nombre_y_apellido">Nombre y apellido</string>
     <string name="registrar">Registrar</string>
     <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="ingenieria_de_software">Ingieneria de Software</string>
+    <string name="enfermeria">Enfermeria</string>
+    <string name="esta_es_tu_facultad">Esta es tu facultad</string>
 
     <string-array name="Paises">
         <item>Rep.Dom</item>
